@@ -2,13 +2,13 @@ pipeline {
     agent any
     
     environment {
-        APP_PORT = '9090'
+        APP_PORT = '9092'
     }
     
     stages {
         stage('Build') {
             steps {
-                sh 'mvn package'
+                sh 'mvn packagesa'
             }
         }
         stage('Unit Test') {
